@@ -30,6 +30,7 @@ sizeBtn.addEventListener("click", () => {
   if (answer > 0 && answer <= 100) {
     container.innerHTML = "";
     size = answer;
+    sizeBtn.textContent = `${size}X${size}`
     createGrid(size);
   } else if (answer == 0) {
     return;
