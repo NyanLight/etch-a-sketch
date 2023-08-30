@@ -1,6 +1,7 @@
 const container = document.querySelector("#container");
 
 let size;
+let color = "black";
 const resetBtn = document.querySelector("#reset");
 const sizeBtn = document.querySelector("#size");
 const colorBtn = document.querySelector("#color");
@@ -11,7 +12,7 @@ function createGrid(size) {
     cell.classList.add("cell");
     cell.style.flexBasis = `${600 / size}px`;
     cell.addEventListener("mouseover", () => {
-      cell.classList.add("hover");
+      cell.style.backgroundColor = `${color}`;
     });
     container.appendChild(cell);
   }
@@ -20,7 +21,7 @@ function createGrid(size) {
 resetBtn.addEventListener("click", () => {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
-    cell.classList.remove("hover");
+    cell.style.backgroundColor = 'white';
   });
 });
 
@@ -33,8 +34,12 @@ sizeBtn.addEventListener("click", () => {
   } else if (answer == 0) {
     return;
   } else {
-    alert("Type value in range from 0 to 100");
+    alert("Enter a value in range from 0 to 100");
   }
 });
+
+colorBtn.addEventListener('change', () => {
+    color = document.getElementById('color').value;
+})
 
 createGrid(4);

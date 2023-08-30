@@ -17,13 +17,9 @@ body {
 }
 
 .cell {
-  outline: solid 1px red;
+  outline: solid 1px black;
   margin: 0;
   padding: 0;
-}
-
-.hover {
-  background-color: black;
 }
 
 #buttons {
@@ -34,4 +30,10 @@ body {
 
 button {
     width: 100px;
+}
+
+input {
+    padding: 0;
+    width: 100px;
+    height: 2.5rem;
 }
