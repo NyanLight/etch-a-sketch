@@ -1,0 +1,17 @@
+body {
+    box-sizing: border-box;
+}
+
+#container {
+    outline: solid 5px black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 600px;
+}
+
+.cell {
+    outline: solid 3px red;
+    margin: 0;
+    padding: 0;
+}  
