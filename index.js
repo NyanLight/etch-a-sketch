@@ -1,7 +1,9 @@
 const container = document.querySelector('#container');
 
-let size = 20; 
-
+let size = 4; 
+const resetBtn = document.querySelector('#reset');
+const sizeBtn = document.querySelector('#size');
+const colorBtn = document.querySelector('#color');
 
 
 function createRow () {
@@ -22,10 +24,11 @@ function createGrid () {
     }
 };
 
-createGrid ();
+function eraseBackground () {
+    cell.classList.remove('hover');
+};
 
-function hoverEffect () {
-    cell.addEventListener('mouseover', () => {
-        cell.classList.add('hover');
-    });
-}
+resetBtn.addEventListener('click', () => eraseBackground);
+
+
+createGrid();

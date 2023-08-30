@@ -1,24 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    box-sizing: border-box;
+  background-color: beige;
 }
 
 #container {
-    outline: solid 5px black;
-    display: flex;
-    flex-wrap: wrap;
-    height: 600px;
-    width: 600px;
-    margin: 2rem auto;
-
+  outline: solid 5px black;
+  display: flex;
+  flex-wrap: wrap;
+  height: 600px;
+  width: 600px;
+  margin: 2rem auto;
+  background-color: white;
 }
 
 .cell {
-    outline: solid 1px red;
-    margin: 0;
-    padding: 0;
-}  
+  outline: solid 1px red;
+  margin: 0;
+  padding: 0;
+}
 
 .hover {
-    background-color: black;
+  background-color: black;
+}
 
+#buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+button {
+    width: 100px;
 }
