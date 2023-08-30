@@ -21,7 +21,7 @@ function createGrid(size) {
 resetBtn.addEventListener("click", () => {
   const cells = document.querySelectorAll(".cell");
   cells.forEach((cell) => {
-    cell.style.backgroundColor = 'white';
+    cell.style.backgroundColor = "white";
   });
 });
 
@@ -38,8 +38,8 @@ sizeBtn.addEventListener("click", () => {
   }
 });
 
-colorBtn.addEventListener('change', () => {
-    color = document.getElementById('color').value;
-})
+colorBtn.addEventListener("change", () => {
+  color = document.getElementById("color").value;
+});
 
 createGrid(4);

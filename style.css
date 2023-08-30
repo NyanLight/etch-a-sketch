@@ -37,3 +37,20 @@ input {
     width: 100px;
     height: 2.5rem;
 }
+
+#main {
+    margin-bottom: 8rem;
+}
+
+footer {
+    border-top: 2px dashed black ;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    
+}
+
+#github {
+    display: flex;
+    justify-content: center;
+} 
