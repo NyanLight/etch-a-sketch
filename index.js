@@ -24,12 +24,17 @@ resetBtn.addEventListener("click", () => {
   });
 });
 
-sizeBtn.addEventListener('click', () => {
-    container.innerHTML='';
-    size = Number(prompt('how many cells do you want?'));
+sizeBtn.addEventListener("click", () => {
+  answer = Number(prompt("how many cells do you want?"));
+  if (answer > 0 && answer <= 100) {
+    container.innerHTML = "";
+    size = answer;
     createGrid(size);
+  } else if (answer == 0) {
+    return;
+  } else {
+    alert("Type value in range from 0 to 100");
+  }
 });
 
 createGrid(4);
-
-
