@@ -8,10 +8,17 @@ body {
     flex-wrap: wrap;
     height: 600px;
     width: 600px;
+    margin: 2rem auto;
+
 }
 
 .cell {
-    outline: solid 3px red;
+    outline: solid 1px red;
     margin: 0;
     padding: 0;
 }  
+
+.hover {
+    background-color: black;
+
+}

@@ -1,6 +1,6 @@
 const container = document.querySelector('#container');
 
-let size = 8; 
+let size = 20; 
 
 
 
@@ -9,6 +9,9 @@ function createRow () {
         const cell = document.createElement('div');
         cell.classList.add('cell');
         cell.style.flexBasis = `${600 / size}px`;
+        cell.addEventListener('mouseover', () => {
+            cell.classList.add('hover');
+        });
         container.appendChild(cell);
     }
 }
@@ -20,3 +23,9 @@ function createGrid () {
 };
 
 createGrid ();
+
+function hoverEffect () {
+    cell.addEventListener('mouseover', () => {
+        cell.classList.add('hover');
+    });
+}
