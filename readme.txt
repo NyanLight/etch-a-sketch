@@ -1,1 +1,0 @@
-it's my etch-a-sketch for The Odin Project cirriculum;   
