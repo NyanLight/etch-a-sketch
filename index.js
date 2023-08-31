@@ -10,7 +10,7 @@ function createGrid(size) {
   for (i = 0; i < size * size; i++) {
     const cell = document.createElement("div");
     cell.classList.add("cell");
-    cell.style.flexBasis = `${600 / size}px`;
+    cell.style.flexBasis = `${500 / size}px`;
     cell.addEventListener("mouseover", () => {
       cell.style.backgroundColor = `${color}`;
     });
